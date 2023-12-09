@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version "$kotlinVersion"
+    id 'org.jetbrains.kotlin.plugin.serialization' version "$kotlinVersion"
+}
+
+mainClassName = "io.ktor.server.netty.EngineMain"
+
+group 'me.apontini'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    implementation "io.insert-koin:koin-ktor:$koinVersion"
+    implementation "org.litote.kmongo:kmongo-serialization:$kmongoVersion" //might be changed to the async one
+    implementation "io.ktor:ktor-server-core:$ktorVersion"
+    implementation "io.ktor:ktor-server-netty:$ktorVersion"
+    implementation "io.ktor:ktor-server-content-negotiation:$ktorVersion"
+    implementation "io.ktor:ktor-serialization-kotlinx-json:$ktorVersion"
+    implementation "ch.qos.logback:logback-classic:$logbackVersion"
+    implementation 'io.ktor:ktor-server-call-logging-jvm:2.3.7'
+
+    testImplementation "io.insert-koin:koin-test:$koinTestVersion"
+    testImplementation "io.insert-koin:koin-test-junit5:$koinTestVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jUnit5Version"
+    testImplementation "io.mockk:mockk:$mockkVersion"
+    testImplementation "io.kotest:kotest-runner-junit5:$kotestVersion"
+    testImplementation "io.kotest:kotest-assertions-core:$kotestVersion"
+    testImplementation "io.kotest.extensions:kotest-extensions-koin:$kotestKoinVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jUnit5Version"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+compileKotlin {}
+
+compileTestKotlin {}

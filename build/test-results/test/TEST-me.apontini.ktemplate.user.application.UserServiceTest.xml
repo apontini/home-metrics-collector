@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="me.apontini.ktemplate.user.application.UserServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-09T16:24:15" hostname="VC9FLQ946L" time="0.087">
+  <properties/>
+  <testcase name="should correctly save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.013"/>
+  <testcase name="should return the created user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.001"/>
+  <testcase name="should throw an exception and not save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.02"/>
+  <testcase name="should correctly delete the specified user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.005"/>
+  <testcase name="should throw an exception and should not delete any user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.003"/>
+  <system-out><![CDATA[User creation
+  Correct execution
+    should correctly save the user
+User creation
+  Correct execution
+    should return the created user
+User creation
+  The email already exists
+    should throw an exception and not save the user
+User deletion
+  Correct execution
+    should correctly delete the specified user
+User deletion
+  The user doesn't exist
+    should throw an exception and should not delete any user
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
