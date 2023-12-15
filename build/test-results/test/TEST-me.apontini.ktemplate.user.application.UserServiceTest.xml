@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="me.apontini.ktemplate.user.application.UserServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-09T16:24:15" hostname="VC9FLQ946L" time="0.087">
+<testsuite name="me.apontini.ktemplate.user.application.UserServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-12-15T19:22:26" hostname="VC9FLQ946L" time="0.065">
   <properties/>
-  <testcase name="should correctly save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.013"/>
-  <testcase name="should return the created user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.001"/>
-  <testcase name="should throw an exception and not save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.02"/>
-  <testcase name="should correctly delete the specified user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.005"/>
-  <testcase name="should throw an exception and should not delete any user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.003"/>
+  <testcase name="should correctly save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.011"/>
+  <testcase name="should return the created user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.0"/>
+  <testcase name="should throw an exception and not save the user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.016"/>
+  <testcase name="should correctly delete the specified user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.004"/>
+  <testcase name="should throw an exception and should not delete any user" classname="me.apontini.ktemplate.user.application.UserServiceTest" time="0.001"/>
   <system-out><![CDATA[User creation
   Correct execution
+20:22:26,348 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+20:22:26,348 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+20:22:26,348 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/albertop/personalprojects/home-metrics-collector/build/resources/main/logback.xml]
+20:22:26,348 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+20:22:26,348 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/albertop/.gradle/caches/modules-2/files-2.1/com.github.weliem.blessed-bluez/blessed-test/0.38/d69fc0ca7ce964f445b3148920ec52d1fd27193b/blessed-test-0.38.jar!/logback.xml]
+20:22:26,348 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/albertop/personalprojects/home-metrics-collector/build/resources/main/logback.xml]
+20:22:26,372 |-INFO in ch.qos.logback.core.joran.action.ImplicitModelAction - Assuming default class name [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for tag [encoder]
+20:22:26,377 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler@2bcbcad - Setting level of ROOT logger to INFO
+20:22:26,377 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler@19db916 - Setting level of logger [io.netty] to INFO
+20:22:26,377 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler@6f98adc4 - Processing appender named [STDOUT]
+20:22:26,377 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler@6f98adc4 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+20:22:26,386 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler@6f98adc4 - Attaching appender [STDOUT] to Logger[ROOT]
+20:22:26,386 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@448d1194 - End of configuration.
+20:22:26,387 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@23b3947c - Registering current configuration as safe fallback point
+
     should correctly save the user
 User creation
   Correct execution

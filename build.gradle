@@ -12,6 +12,7 @@ version '1.0.0'
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
@@ -23,7 +24,9 @@ dependencies {
     implementation "io.ktor:ktor-server-content-negotiation:$ktorVersion"
     implementation "io.ktor:ktor-serialization-kotlinx-json:$ktorVersion"
     implementation "ch.qos.logback:logback-classic:$logbackVersion"
-    implementation 'io.ktor:ktor-server-call-logging-jvm:2.3.7'
+    implementation "io.ktor:ktor-server-call-logging-jvm:$ktorVersion"
+    implementation "com.github.weliem.blessed-bluez:blessed:$blessedBluezVersion"
+
 
     testImplementation "io.insert-koin:koin-test:$koinTestVersion"
     testImplementation "io.insert-koin:koin-test-junit5:$koinTestVersion"

@@ -1,13 +1,14 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-bullseye
 
-RUN apt-get update && apt-get install findutils -y
+RUN apt update && apt install -y findutils bluez bluetooth
 
 EXPOSE 8080:8080
 
 RUN mkdir /app
 
-COPY ./build/install/kotlin-template/ /app/
+COPY ./build/install/home-metrics-collector/ /app/
+COPY ./docker/start.sh /app/bin/start.sh
 
 WORKDIR /app/bin
 
-CMD ["./kotlin-template"]
+CMD ["./start.sh"]
